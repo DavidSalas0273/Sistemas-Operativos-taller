@@ -1,4 +1,4 @@
-# 🖥️ Taller de Sistemas Operativos — Gestión de Memoria y Procesos
+# Taller de Sistemas Operativos — Gestión de Memoria y Procesos
 
 Colección de 4 scripts en Python que demuestran conceptos fundamentales de Sistemas Operativos: gestión de memoria, jerarquía de caché, paginación virtual y planificación de procesos.
 
@@ -6,7 +6,7 @@ Colección de 4 scripts en Python que demuestran conceptos fundamentales de Sist
 
 ---
 
-## 📁 Estructura del proyecto
+##Estructura del proyecto
 
 ```
 Sistemas-Operativos-taller/
@@ -116,9 +116,9 @@ python 2_simulador_cache.py
 Llena progresivamente una lista con millones de strings en un bucle, forzando al SO a agotar la RAM física y comenzar a usar la memoria virtual (Swap/página). Incluye un **límite de seguridad de 1,500 MB** para no bloquear la máquina.
 
 Muestra en pantalla las 3 fases del proceso de paginación:
-- 🟢 **Fase 1:** Todo en RAM física (rápido)
-- 🟡 **Fase 2:** Paginación iniciada, RAM física casi llena
-- 🔴 **Fase 3:** Alta paginación, usando memoria virtual (lento)
+- **Fase 1:** Todo en RAM física (rápido)
+- **Fase 2:** Paginación iniciada, RAM física casi llena
+- **Fase 3:** Alta paginación, usando memoria virtual (lento)
 
 ### Cómo ejecutarlo
 ```bash
@@ -127,7 +127,7 @@ python 3_estres_memoria.py
 # Ctrl+C para detener de forma segura
 ```
 
-> ⚠️ **Advertencia:** El script se detiene automáticamente al llegar a 1,500 MB. Al salir libera toda la memoria consumida.
+>  **Advertencia:** El script se detiene automáticamente al llegar a 1,500 MB. Al salir libera toda la memoria consumida.
 
 ### Resultado de prueba
 ```
@@ -145,11 +145,11 @@ python 3_estres_memoria.py
   SWAP/Virtual : [██████░░░░░░░░░░░░░░░░░░░░░░░░]  19.7%
     Usada  :    3,218 MB / 16.4 GB
 
-  🟡 Fase 2: Paginación iniciada — RAM física casi llena
+   Fase 2: Paginación iniciada — RAM física casi llena
 ```
 **Al terminar:**
 ```
-  ⛔  LÍMITE ALCANZADO (1500 MB) — deteniendo.
+    LÍMITE ALCANZADO (1500 MB) — deteniendo.
   Liberando 1,498 MB de RAM...
   Memoria liberada. El SO recuperará las páginas.
   RAM sistema ahora: 7,842 MB usados (49.5%)
